@@ -1,0 +1,43 @@
+{
+  "id": "com.ms.carddevtaining_t",
+  "schemaVersion": 1,
+  "displayName": "Card Development",
+  "providerName": "MS",
+  "icon": "AppIcon.png",
+  "version": "3",
+  "minorVersion": "7",
+  "appModel": "AppModel.json",
+  "description": "Card Development training",
+  "views" : {
+    "CreationView" : {
+      "sourceLocation" : "creationView.html",
+      "showNativeToolbar" : false,
+      "labelHeader" : "Card Development",
+      "backDialogVisibility" : true,
+      "backDialogTitle" : "Card Development",
+      "backDialogDescription" : "Are you sure you want to discard your response"
+    },
+    "ResponseView" : {
+      "sourceLocation" : "responseView.html",
+      "showNativeToolbar" : false,
+      "labelHeader" : "Card Development",
+      "backDialogVisibility" : true,
+      "backDialogTitle" : "Card Development",
+      "backDialogDescription" : "Are you sure you want to discard your response"
+    },
+    "ChatCanvasCardView": {
+      "sourceLocation": "ChatCardView.json",
+      "showReceipts": false,
+      "showLikes": true,
+      "showComments": true,
+      "showHeader": false,
+      "showExpiry": false,
+      "labelResponseSending": "Sending your message",
+      "labelResponseFailed": "Error sending message",
+      "showFooter": true,
+      "isResponseEditable": false,
+      "responseQuestionId": 0,
+      "labelRespondToForm": "View Details"
+    }
+  }
+}

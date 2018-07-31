@@ -1,0 +1,11 @@
+{
+  "id": "com.ms.carddevtaining_t",
+  "schemaVersion": 1,
+  "displayName": "Card Development",
+  "providerName": "MS",
+  "icon": "AppIcon.png",
+  "version": "1",
+  "minorVersion": "2",
+  "appModel": "AppModel.json",
+  "description": "Card Development training"
+}

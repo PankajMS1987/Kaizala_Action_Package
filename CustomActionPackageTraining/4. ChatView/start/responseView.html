@@ -1,0 +1,256 @@
+<html>
+<head>
+    <style>
+    
+    .section-header {
+            background-color: rgba(152, 163, 175, 0.08);
+            font-size: 12px;
+            color: #667787;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-top: 15px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 16px;
+        }
+        .section {
+            margin-left: 16px;
+            margin-right: 12px;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .question-title {
+            padding-bottom: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #006ff1;
+        }
+        .comment-input {
+            margin-bottom: 8px;
+            font-size: 16px;
+            font-weight: normal;
+            color: #32485f;
+            border: 0;
+            outline: 0;
+            background: transparent;
+            width: calc(100%-30pt);
+            font-family: -apple-system, sans-serif;
+        }
+        .option-div {
+            font-size: 16px;
+            font-weight: normal;
+            color: rgb(50, 72, 95);
+        }
+        
+        .options {
+            align-items: center;
+            padding: 8px 0;
+        }
+        
+        .select {
+            border-bottom: 1px solid #e0e3e7;
+            color: #006ff1;
+            overflow: hidden;
+            height: 40px;
+            margin-bottom: 4px;
+            position: relative;
+            display: block;
+        }
+        
+        select {
+            height: 40px;
+            padding: 5px;
+            padding-right: 30px;
+            background-color: #ececec;
+            border: 0;
+            outline: none;
+            font-size: 16px;
+            width: 100%;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+        
+        .select:after {
+            content: "▼";
+            padding: 12px 8px;
+            position: absolute;
+            right: 10px;
+            top: 0;
+            z-index: 1;
+            text-align: center;
+            width: 10%;
+            height: 100%;
+            pointer-events: none;
+            box-sizing: border-box;
+        }
+        
+        select option {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100px;
+        }
+        .cancel-img {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            right: -5px;
+            top: -5px;
+        }
+        
+        .section-img {
+            height: 40px;
+        }
+        
+        .section-selected-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        .selected-img-view {
+            width: 90pt;
+            height: 90pt;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
+        .body-container {
+            margin-top: 40pt;
+            margin-bottom: 76pt;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            margin-bottom: 0;
+            width: 100%;
+            display: inline-box;
+            padding-top: 31.5pt;
+            padding-bottom: 15pt;
+            padding-left: 5%;
+            padding-right: 5%;
+            overflow: hidden;
+            background-image: url("footer_bg.png");
+            background-size: contain;
+            z-index: 2;
+        }
+        
+        .footer-action {
+            margin-bottom: 0pt;
+            height: 33pt;
+            width: 30%;
+            color: rgb(0, 111, 241);
+            background-color: white;
+            border-radius: 0;
+            font-size: 12pt;
+            font-weight: normal;
+            float: left;
+            -webkit-appearance: none;
+        }
+        
+        .first-column {
+            white-space: nowrap;
+        }
+        
+        .footer-action:disabled {
+            color: #6f7e8f;
+        }
+        
+        .footer-action-previous {
+            margin-bottom: 0pt;
+            height: 33pt;
+            width: 30%;
+            color: rgb(0, 111, 241);
+            background-color: white;
+            border-radius: 2px;
+            font-size: 12pt;
+            font-weight: normal;
+            float: left;
+            -webkit-appearance: none;
+            border: 1px solid rgba(111, 126, 143, 0.5);
+            background-image: url("previous.png");
+            background-position: center;
+            background-size: 19pt 8pt;
+            background-repeat: no-repeat;
+        }
+        
+        .footer-action-previous:disabled {
+            background-image: url("previous_disabled.png");
+        }
+        
+        .footer-action-next {
+            margin-bottom: 0pt;
+            height: 33pt;
+            width: 30%;
+            color: rgb(0, 111, 241);
+            background-color: white;
+            border-radius: 2px;
+            font-size: 12pt;
+            font-weight: normal;
+            float: left;
+            -webkit-appearance: none;
+            border: none;
+            background-image: url("next.png");
+            background-position: center;
+            background-size: 19pt 8pt;
+            background-repeat: no-repeat;
+            background-color: #00a1ff;
+        }
+        
+        .footer-action-next:disabled {
+            background-image: url("next_disabled.png");
+        }
+        
+        .footer-action-send {
+            margin-bottom: 0pt;
+            height: 33pt;
+            width: 30%;
+            color: white;
+            background-color: #5ad7a4;
+            border-radius: 2px;
+            font-size: 12pt;
+            font-weight: normal;
+            border: none;
+            font-weight: 600;
+            float: left;
+            -webkit-appearance: none;
+        }
+        
+        .footer-action-submit {
+            margin-bottom: 0pt;
+            height: 33pt;
+            width: 90%;
+            border-radius: 2px;
+            font-size: 12pt;
+            font-weight: normal;
+            float: left;
+            -webkit-appearance: none;
+            border: 1px solid rgba(111, 126, 143, 0.5);
+            background-position: center;
+            background-size: 19pt 8pt;
+            background-repeat: no-repeat;
+        }
+
+    </style>
+    <script type="text/javascript" src="KASClientCore.js"></script>
+    <script type="text/javascript" src="KASClientUI.js"></script>
+    <script type="text/javascript" src="responseView.js"></script>
+</head>
+<body onload="onPageLoad()">
+    <div id="header" style='z-index: 2;'>
+    </div>        
+    <div class="body-container">
+        <div class='section-header'>Question Section</div>
+        <div class="section" id="nameDiv"></div>
+        <div class="section" id="genderDiv"></div>
+        <div class="section" id="AttachmentDiv"></div>
+        <div class="section" id="otherQuestionDiv"></div>
+    </div>
+    <!--The footer section-->
+    <div class="footer" id="footer"></div>        
+</body>
+
+</html>

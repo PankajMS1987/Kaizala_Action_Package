@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "schema": {
+    "type": "container",
+    "initialHeight": 300,
+    "layout": "vertical",
+    "children": [
+	      {
+        "type": "container",
+        "layout": "horizontal",
+        "verticalAlignment": "top",
+        "children": [
+            {
+                "type": "image",
+                "height": 15,
+                "width": 15,
+                "marginLeft": 10,
+                "marginRight": 10,
+                "backgroundColor": "#FFFFFF",
+                "source": "AppIcon.png",
+                "contentMode": "aspectFill",
+                "marginBottom": 6,
+                "marginTop" : 10
+              },
+              {
+                "type": "text",
+                "paddingLeft": 5,
+                "paddingRight": 10,
+                "width" : 200,
+                "string": "Card development",
+                "fontSize": 16,
+                "fontStyle": "regular",
+                "textColor": "#32495f",
+                "backgroundColor": "#ffffff",
+                "textAlignment": "left",
+                "marginBottom": 12,
+        				"marginTop" : 8
+              }
+            ]
+        },
+        {
+          "type": "text",
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "string": "Thanks for your response",
+          "fontSize": 14,
+          "fontStyle": "regular",
+          "textColor": "#000000",
+          "backgroundColor": "#ffffff",
+          "textAlignment": "left",
+          "maxNumberOfLines": 5,
+          "marginBottom": 5,
+          "marginTop" : 5  
+        }
+        ]
+      }
+  }

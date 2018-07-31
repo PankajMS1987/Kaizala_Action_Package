@@ -1,0 +1,21 @@
+{
+  "id": "com.ms.carddevtaining_t",
+  "schemaVersion": 1,
+  "displayName": "Card Development",
+  "providerName": "MS",
+  "icon": "AppIcon.png",
+  "version": "2",
+  "minorVersion": "7",
+  "appModel": "AppModel.json",
+  "description": "Card Development training",
+  "views" : {
+    "CreationView" : {
+      "sourceLocation" : "creationView.html",
+      "showNativeToolbar" : false,
+      "labelHeader" : "Card Development",
+      "backDialogVisibility" : true,
+      "backDialogTitle" : "Card Development",
+      "backDialogDescription" : "Are you sure you want to discard your response"
+    }
+  }
+}
