@@ -13,7 +13,7 @@
     {
       "title" : "Gender",
       "type" : "SingleSelect",
-      "option" : [
+      "options" : [
         {
           "title" : "Male"
         },

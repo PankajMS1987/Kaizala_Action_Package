@@ -4,8 +4,8 @@
   "displayName": "Card Development",
   "providerName": "MS",
   "icon": "AppIcon.png",
-  "version": "3",
-  "minorVersion": "7",
+  "version": "4",
+  "minorVersion": "5",
   "appModel": "AppModel.json",
   "description": "Card Development training",
   "views" : {
