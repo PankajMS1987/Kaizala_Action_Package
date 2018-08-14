@@ -1,0 +1,43 @@
+{
+  "id": "com.nh.kaizala.speechTotext",
+  "schemaVersion": 1,
+  "displayName": "Speech To Text",
+  "providerName": "MS",
+  "icon": "AppIcon.png",
+  "version": "3",
+  "minorVersion": "1",
+  "appModel": "AppModel.json",
+  "description": "Speech To Text",
+  "actionScope": "Group",
+  "views": {
+    "ChatCanvasCardView": {
+      "showReceipts": false,
+      "showLikes": false,
+      "showComments": false,
+      "showHeader": true,
+      "showExpiry": false,
+      "showFooter": false,
+      "labelResponseSending": "Sending your message",
+      "labelResponseFailed": "Error sending message",
+      "labelResponded": "View Details",
+      "labelRespondToForm": "View Details",
+      "isResponseEditable": false
+    },
+    "CreationView": {
+      "sourceLocation": "CreationView.html",
+      "showNativeToolbar": false,
+      "backDialogVisibility": true,
+      "backDialogTitle": "Speech To Text",
+      "backDialogDescription": "Are you sure you want to discard your response?"
+    },
+    "ResponseResultsView": {
+      "sourceLocation": "ResponseResultsView.html",
+      "labelHeader": "Speech To Text",
+      "showNativeToolbar": false,
+      "backDialogVisibility": false
+    },
+    "DiscoverView": {
+      "icon": "AppIcon.png"
+    }
+  }
+}
